@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+ 
+<body>
+    <header>
+        <h3 class="title">Login & Registration Form</h3>
+    </header>
+    
+    <!-- container div -->
+    <div class="container">
+ 
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login2">Login</button>
+            <button class="signup2">Signup</button>
+        </div>
+ 
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+ 
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email" class="email ele" placeholder="your-email@email.com">
+                <input type="password" class="password ele" id="masterPassword" placeholder="password">
+                <a href="CAPTCHA.html"><button class="clkbtn"  >Login</button></a>
+                <a href="forgot.html"><b><h3 style="color: rgb(141, 138, 138);">Forgot Password</h3></b></a>
+            <b><h2> </h2>   </b> 
+            </div>
+ 
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="text" class="name ele" placeholder="Enter your name">
+                <input type="email" class="email ele" placeholder="youremail@gmail.com">
+                <input type="password" class="password ele" id="newPassword" placeholder="password">
+                <input type="password" class="password ele"   placeholder="Confirm password">
+                <a href="Mailstorage.html"><button class="clkbtn" id="encryptButton">Signup</button></a> 
+                <!-- anchor tag seucrity.html -->
+                <a href="password selector .html"><b><h3 style="color: rgb(141, 138, 138);">Customize Password</h3></b></a>
+                <div id="output" style="color: aliceblue;"><h3></h3></div>
+                <form action="http://localhost:3000/update-profile" method="post"></form>
+            </div>
+        </div>
+    </div>
+
+  
+        
+
+       
+    <script src="script.js"></script>
+ <script src="script10.js"></script> 
+</body>
+</html>

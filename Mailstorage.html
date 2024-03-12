@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+    <link rel="stylesheet" href="./jquery/css/bootstrap.min.css">  
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Email Form</h2>
+    
+    <!-- Form Section -->
+    <form id="emailForm">
+        <div class="form-group">
+            <label for="inputEmail">Email Address</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="emailType">Email Type</label>
+            <select class="form-control" id="emailType">
+                <option value="student">Student Email</option>
+                <option value="office">Office Email</option>
+                <option value="personal">Personal Email</option>
+            </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- Tabular Section -->
+    <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" id="student-tab" data-toggle="tab" href="#student">Student Emails</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="office-tab" data-toggle="tab" href="#office">Office Emails</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal">Personal Emails</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="student">
+            <h3>Student Email Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody"></tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="office">
+            <h3>Office Email Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody id="officeTableBody"></tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="personal">
+            <h3>Personal Email Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+                <tbody id="personalTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="./jquery/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="./jquery/js/bootstrap.min.js"></script>
+<script src="mailstorage.js"></script>
+
+</body>
+</html>
